@@ -1,0 +1,26 @@
+<!DOCTYPE html><!--html的声明-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--网页兼容，X-UA-Compatibl用于为 IE8 指定不同的页面渲染模式，Edge模式通知浏览器以最高级别的可用模式显示内容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--width宽度是设备屏幕的宽度，initial-scale初始的缩放比例，viewport浏览器或可视窗口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--放在public根目录下，是一个页面图表显示-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--前端加载js文件-->
+    <script type="text/javascript" src="/config.js"></script>
+    <title>海南免税店管理系统</title>
+</head>
+
+<body>
+    <!--无法识别script标签的浏览器会把标签的内容显示到页面上-->
+    <noscript>
+        <strong>We're sorry but screen doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="app"></div>
+</body>
+
+</html>

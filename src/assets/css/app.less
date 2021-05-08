@@ -1,0 +1,50 @@
+.title {
+    height: 60px;
+    background: #fff;
+    line-height: 60px;//设置行高
+    padding-left: 15px;//设置左填充边距
+
+    .el-breadcrumb {
+        line-height: 60px;
+    }
+}
+
+.main {
+    height: calc(100vh - 110px);//calc用于动态计算长度值，设置值为当前窗口高度-110px
+    margin-top: 10px;//设置上边距
+    background: #fff;
+    overflow-y: scroll;//上下滚动条
+    padding-bottom: 20px;
+}
+
+.search {
+    text-align: left;//内容居左显示
+    padding: 10px 20px;//设置边距，即上、下10px；左、右20px
+}
+
+.pagination {
+    margin-top: 20px;
+    float: right;//靠右换行
+    margin-right: 20px;
+}
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #e3e3e3;
+}
