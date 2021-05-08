@@ -9,6 +9,9 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 // import VueParticles from 'vue-particles';
 
+import axios from 'axios';
+
+axios.defaults.withCredentials = true;
 Vue.config.productionTip = false;
 Vue.prototype.$echarts = echarts;
 Vue.use(ElementUI);
